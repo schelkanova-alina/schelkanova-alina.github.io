@@ -1,0 +1,30 @@
+#contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+    margin-bottom: 100px;
+}
+
+.round {
+    display: block;
+    opacity: .3;
+    margin: auto;
+    text-decoration: none;
+    text-align: center;
+}
+
+.round img {
+    display: inline-block;
+    max-width: 100%;
+    width: 80px;
+    height: 80px;
+}
+
+@media screen and (max-width:640px) {
+    
+    .round {
+        width: 70px;
+        height: 70px;
+    }
+}

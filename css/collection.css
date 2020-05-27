@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+#collection {
+    background-image: url("../img/img_0386.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+}
+
+#collection .image {
+    max-width: 100%;
+}
+
+.head-text {
+    width: 100%;
+    padding: 0 30px;
+    max-width: 1920px;
+}
+
+h1 {
+    color: #fff;
+    text-align: right;
+    letter-spacing: 0.02em;
+    text-transform: lowercase;
+    /*    font-size: 3rem;*/
+    font-size: 1vw;
+    margin-right: 5vw;
+
+}
+
+

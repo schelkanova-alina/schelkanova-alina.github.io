@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+div img {
+    display: block;
+    max-width: 100%;
+}
+
+#s1 .container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider .item {
+    position: relative;
+    /*  height: 100vh; */
+    width: 100%;
+    max-height: 80vh;
+}
+
+.slider .item img {
+    /* Для заповнення ілюстрацією батьківського контейнера   */
+    /* Застосовуємо власт. object-fit  */
+    /*     object-fit: cover;
+    object-position: center center;
+    height: 100%; */
+    width: 100%;
+    margin: auto;
+    max-width: 140vh;
+}
+
+/* .slider .item:nth-child(1) img {
+    max-width: 140vh;
+    
+} */
+
+
+/* Якщо потрібно інакше позиціонувати ілюстрацію */
+/* (стосується в першу чергу телефонів) */
+/* додавайте додатковий клас в html */
+/* і описуйте в css інакше позиціонування */
+.slider .item.pos-bottom img {
+    object-position: center bottom;
+}
+
+.slider .item.pos-left img {
+    object-position: left center;
+}
+
+.caption {
+    color: #fff;
+    font-size: 0.35rem;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-weight: 700;
+    display: block;
+    position: absolute;
+    text-align: right;
+    right: 0;
+    top: 0;
+    margin-top: 20px;
+    padding-right: 20px;
+    max-width: 200px;
+}
+
+@media screen and (orientation:portrait) {
+    
+    #s1 {
+        padding-left: 0;
+        padding-right: 0;
+        min-height: 0;
+    }
+    
+    #s1 .container {
+        margin-top:60px;
+        min-height: 0;
+    }
+
+    .slider .item img {
+        max-width: none;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .item .caption {
+        display: none;
+    }
+}
